@@ -1,6 +1,5 @@
 import React from "react";
 import { Formik } from "formik";
-import { Button, Form } from 'react-bootstrap'
 
 interface Props {
   formData?: {
@@ -22,16 +21,17 @@ const EventForm: React.FC<Props> = ({ formData }) => {
         {({ values, handleSubmit, handleChange }) => {
           return (
             <form onSubmit={handleSubmit}>
-              <Form.Group controlId='formUrlId'>
-              <Form.Label>Url</Form.Label>
-              <Form.Control
-                type='text'
+              <label>Url</label>
+              <input
+                type="text"
                 onChange={handleChange}
                 name="url"
                 value={values.url}
               />
-              </Form.Group>
-              <Button variant='primary' type="submit">Add event</Button>
+
+              <button type="submit">
+                Add event
+              </button>
             </form>
           );
         }}
