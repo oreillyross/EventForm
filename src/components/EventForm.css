@@ -5,15 +5,21 @@ form {
 label {
   display: block;
   text-align: left;
-  padding: 0 0 0 24px;
-  border: 1px solid pink;
+  padding: 0 0 0 6px;
+  
 }
 
-input textarea {
-  text-align: left;
-  width: 90%;
-}
+
 
 button {
+  margin: 6px;
   display: block;
+}
+
+
+.inputs {
+  display: block;
+  width: 90%;
+
+  
 }
